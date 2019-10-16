@@ -31,7 +31,7 @@ archive_MiszaBot_template_re = re.compile(r'\{\{User:MiszaBot/config.*?counter\s
 archive_box_template_re = re.compile(r'\{\{archive.*?\|.*?(\[\[/.*?)\}\}', re.DOTALL) #for xml
 link_re = re.compile(r'\[\[([^|]*?)(?:\|.*?)*?\]\]')
 
-xml_metadata_re = re.compile('<page pageid="(.+?)" ns="1" title="(.+?)">', re.DOTALL)
+xml_metadata_re = re.compile('<page _idx="\d+" pageid="(.+?)" ns="1" title="(.+?)">', re.DOTALL)
 xml_text_re = re.compile('<rev .*? xml:space="preserve">(.*)</rev>', re.DOTALL)
 redirectP = re.compile(r'#REDIRECT \[\[(.*)\]\]')
 
